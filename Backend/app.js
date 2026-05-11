@@ -14,6 +14,7 @@ const userRoutes = require('./routes/userRoutes');
 const app = express();
 
 app.use(cors(corsConfig));
+app.options('*', cors(corsConfig)); // Enable preflight for all routes
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
