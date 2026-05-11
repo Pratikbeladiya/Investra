@@ -37,7 +37,7 @@ apiClient.interceptors.response.use(
       localStorage.removeItem(STORAGE_USER);
       localStorage.removeItem(LEGACY_STORAGE_TOKEN);
       localStorage.removeItem(LEGACY_STORAGE_USER);
-      window.location.href = 'http://localhost:3000/login';
+      window.location.href = '/login';
     }
     return Promise.reject(error);
   }

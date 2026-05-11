@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import apiClient from "../../services/api";
 import {
   Menu as MuiMenu,
@@ -21,7 +21,6 @@ import '../../styles/navbar/DashboardHeader.css';
 
 const DashboardHeader = () => {
   const location = useLocation();
-  const navigate = useNavigate();
   const [indices, setIndices] = useState({
     nifty: null,
     sensex: null,
@@ -114,7 +113,7 @@ const DashboardHeader = () => {
     localStorage.removeItem("trade_user");
     localStorage.removeItem("zerodha_token");
     localStorage.removeItem("zerodha_user");
-    window.location.href = "http://localhost:3000/login";
+    window.location.href = '/login';
   };
 
   const IndexItem = ({ label, data }) => (
