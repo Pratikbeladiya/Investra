@@ -1,0 +1,136 @@
+.signup-page-wrapper {
+  background: #f7f8fc;
+  min-height: calc(100vh - 120px);
+  padding: 60px 20px;
+}
+
+.signup-content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.signup-info-section {
+  flex: 1 1 400px;
+  max-width: 480px;
+}
+
+.badge-join {
+  display: inline-block;
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  background: #eef2ff;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.signup-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.signup-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.05rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.signup-form-card {
+  flex: 1 1 400px;
+  max-width: 460px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.08);
+  padding: 48px 40px;
+}
+
+.signup-form-card h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.signup-form-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 28px;
+}
+
+.success-alert {
+  background: #f0fdf4;
+  color: #166534;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+  border: 1px solid #bbf7d0;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form-row > div {
+  flex: 1;
+}
+
+.signup-btn {
+  width: 100%;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.signup-btn:hover {
+  background: #4338ca;
+}
+
+.signup-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .signup-title {
+    font-size: 2.2rem;
+  }
+  
+  .signup-content-container {
+    gap: 40px;
+  }
+}

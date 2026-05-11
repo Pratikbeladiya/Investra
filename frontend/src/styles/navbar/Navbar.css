@@ -1,0 +1,62 @@
+.navbar-custom {
+  background-color: #ffffff;
+  padding: 15px 0;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.navbar-brand-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: -1px;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar-brand-dot {
+  color: #2563eb;
+}
+
+.nav-link-custom {
+  font-weight: 500;
+  color: #475569 !important;
+  margin: 0 15px;
+  transition: color 0.2s;
+}
+
+.nav-link-custom:hover {
+  color: #2563eb !important;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-right: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.get-started-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background-color: #2563eb;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.2s, transform 0.1s;
+  cursor: pointer;
+  border: none;
+}
+
+.get-started-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.get-started-btn:active {
+  transform: scale(0.98);
+}

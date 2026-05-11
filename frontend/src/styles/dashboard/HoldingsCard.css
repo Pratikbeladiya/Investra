@@ -1,0 +1,75 @@
+.holdings-card-wrapper {
+  flex: 1;
+  min-width: 300px;
+}
+
+.holdings-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.holdings-card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.holdings-card-body {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  border: 1px solid var(--border-color);
+}
+
+.holdings-card-amount {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.holdings-card-amount.positive {
+  color: var(--accent-color);
+}
+
+.holdings-card-amount.negative {
+  color: #f44336;
+}
+
+.holdings-card-percent {
+  font-size: 0.95rem;
+  margin-left: 8px;
+  opacity: 0.75;
+}
+
+.holdings-card-label {
+  color: var(--text-secondary);
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+}
+
+.holdings-card-divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 16px 0;
+}
+
+.holdings-card-stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.holdings-stat-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0 0 4px;
+}
+
+.holdings-stat-value {
+  font-weight: 500;
+  margin: 0;
+  color: var(--text-primary);
+}

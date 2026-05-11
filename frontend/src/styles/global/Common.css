@@ -1,0 +1,33 @@
+.stock-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  min-width: 64px;
+}
+
+.stock-btn-buy {
+  background: var(--accent-color);
+  color: #000;
+}
+
+.stock-btn-sell {
+  background: #ef4444;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .stock-btn {
+    flex: 1 1 calc(50% - 8px);
+    min-width: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .stock-btn {
+    padding: 8px 12px;
+    font-size: 0.78rem;
+  }
+}

@@ -1,0 +1,63 @@
+.equity-card-wrapper {
+  flex: 1;
+  min-width: 300px;
+}
+
+.equity-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.equity-card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.equity-card-body {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border-color);
+}
+
+.equity-card-amount {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.equity-card-label {
+  color: var(--text-secondary);
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+}
+
+.equity-card-divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 16px 0;
+}
+
+.equity-card-stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.equity-stat-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0 0 4px;
+}
+
+.equity-stat-value {
+  font-weight: 500;
+  margin: 0;
+  color: var(--text-primary);
+}

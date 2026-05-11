@@ -1,0 +1,220 @@
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.indices-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  overflow-x: auto;
+}
+
+.index-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.index-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.index-price {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.index-price.positive {
+  color: var(--accent-color);
+}
+
+.index-price.negative {
+  color: #ef4444;
+}
+
+.index-percent {
+  font-size: 0.65rem;
+  opacity: 0.8;
+}
+
+.index-percent.positive {
+  color: var(--accent-color);
+}
+
+.index-percent.negative {
+  color: #ef4444;
+}
+
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu specific styles */
+.menu-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+}
+
+.menus-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu-item-link {
+  text-decoration: none;
+}
+
+.menu-item-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding-bottom: 18px;
+  border-bottom: 2px solid transparent;
+}
+
+.menu-item-text.active {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.menu-item-text:hover {
+  color: var(--accent-color);
+}
+
+.menu-divider {
+  width: 1px;
+  height: 24px;
+  background: var(--border-color);
+  margin: 0 20px;
+}
+
+.profile-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  background: transparent;
+}
+
+.profile-btn:hover {
+  background: var(--hover-bg);
+  border-color: var(--border-color);
+}
+
+.profile-avatar {
+  background: var(--accent-color);
+  color: #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.profile-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* ── Dark mode overrides for MUI components ── */
+body.dark-mode .MuiPaper-root.MuiMenu-paper,
+body.dark-mode .MuiPopover-paper {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode .MuiMenuItem-root,
+body.dark-mode .MuiMenuItem-root .MuiTypography-root,
+body.dark-mode .MuiListItemText-primary {
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode .MuiListItemText-secondary {
+  color: var(--text-secondary) !important;
+}
+
+body.dark-mode .MuiMenuItem-root:hover {
+  background: var(--hover-bg) !important;
+}
+
+body.dark-mode .MuiDivider-root {
+  border-color: var(--border-color) !important;
+}
+
+body.dark-mode .MuiListItemIcon-root .MuiSvgIcon-root {
+  color: var(--text-secondary) !important;
+}
+
+body.dark-mode .MuiPaper-root {
+  background: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode .MuiTypography-root {
+  color: var(--text-primary);
+}
+
+body.dark-mode .MuiTypography-colorTextSecondary,
+body.dark-mode .MuiTypography-body2 {
+  color: var(--text-secondary) !important;
+}
+
+body.dark-mode .MuiTab-root {
+  color: var(--text-secondary) !important;
+}
+
+body.dark-mode .MuiTab-root.Mui-selected {
+  color: var(--accent-color) !important;
+}
+
+body.dark-mode .MuiListItem-root {
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode .MuiOutlinedInput-root input {
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode .MuiInputLabel-root {
+  color: var(--text-secondary) !important;
+}
+
+body.dark-mode .MuiOutlinedInput-notchedOutline {
+  border-color: var(--border-color) !important;
+}
