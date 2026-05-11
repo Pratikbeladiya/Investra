@@ -27,7 +27,7 @@ const AnalyticsPanel = ({ holdings, totalValue }) => {
   const chartData = useMemo(() => {
     const totalHoldings = holdings.reduce((sum, item) => sum + item.latestPrice * item.qty, 0);
     const invested = holdings.reduce((sum, item) => sum + item.avgPrice * item.qty, 0);
-    const profit = totalHoldings - invested;
+    // const profit = totalHoldings - invested;
 
     return [
       { name: 'Invested', value: invested },
