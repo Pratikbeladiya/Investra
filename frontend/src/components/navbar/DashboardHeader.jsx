@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import apiClient from "../../services/api";
 import {
   Menu as MuiMenu,
@@ -21,7 +21,6 @@ import '../../styles/navbar/DashboardHeader.css';
 
 const DashboardHeader = () => {
   const location = useLocation();
-  const navigate = useNavigate();
   const [indices, setIndices] = useState({
     nifty: null,
     sensex: null,

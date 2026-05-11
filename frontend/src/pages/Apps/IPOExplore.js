@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-import BusinessIcon from '@mui/icons-material/Business';
 import InfoIcon from '@mui/icons-material/Info';
 
 const IPOExplore = () => {
