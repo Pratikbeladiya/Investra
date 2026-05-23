@@ -212,7 +212,7 @@ PORT=5000
 ## 🏠 Dashboard
 
 ```md
-![Dashboard](./Github screenshot/dashboard.png)
+![Dashboard](./Screenshots/dashboard.png)
 ```
 
 ---
