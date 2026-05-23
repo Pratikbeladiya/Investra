@@ -211,9 +211,9 @@ PORT=5000
 
 ## 🏠 Dashboard
 
-```md
+
 ![Dashboard](./Screenshots/dashboard.png)
-```
+
 
 ---
 
