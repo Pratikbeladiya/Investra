@@ -128,7 +128,7 @@ Investra/
 # 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/Investra.git
+git clone https://github.com/Pratikbeladiya/Investra.git
 ```
 
 ---
@@ -190,7 +190,7 @@ npm start
 Backend will run on:
 
 ```bash
-http://localhost:5000
+http://localhost:3001
 ```
 
 ---
@@ -249,49 +249,11 @@ PORT=5000
 
 ---
 
-# 📷 How to Add Screenshots
-
-## Step 1:
-Create screenshots folder:
-
-```bash
-screenshots
-```
-
----
-
-## Step 2:
-Add your website images inside it.
-
-Example:
-
-```bash
-screenshots/dashboard.png
-screenshots/market.png
-screenshots/portfolio.png
-```
-
----
-
-## Step 3:
-Paste image markdown:
-
-```md
-![Dashboard](./screenshots/dashboard.png)
-```
-
----
-
 # 🌐 Live Demo
 
-## Frontend
+## Live Deploy Website
 ```md
-Add Your Vercel Link Here
-```
-
-## Backend
-```md
-Add Your Render/Railway Link Here
+https://investra-frontend.vercel.app/
 ```
 
 ---
@@ -319,9 +281,9 @@ Fork the repository and create a pull request.
 
 ## 👨‍💻 Pratik Beladiya
 
-- 📩 Email: your-email@gmail.com
-- 💼 LinkedIn: Add Your LinkedIn Link
-- 🌐 GitHub: https://github.com/yourusername
+- 📩 Email: beladiyapratik03@gmail.com
+- 💼 Portfolio: 
+- 🌐 GitHub: https://github.com/Pratikbeladiya 
 
 ---
 
@@ -329,15 +291,15 @@ Fork the repository and create a pull request.
 
 If you like this project:
 
-⭐ Star the repository  
-🍴 Fork the repository  
-📢 Share with others
+⭐ Star the repository
+🔗 Fork the repository  
+⏩️Share with others
 
 ---
 
 <div align="center">
 
-## 💹 “Smart Investments Begin with Smart Technology.”
+## “Smart Investments Begin with Smart Technology.”
 
 Made with ❤️ by Pratik Beladiya
 
