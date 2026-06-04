@@ -9,7 +9,7 @@
 
 ### 💹 Modern Full Stack Stock Trading & Investment Platform
 
-Track stocks, manage investments, create watchlists, and monitor portfolios with real-time market-focused features.
+Track stocks, manage investments,funds withdraw & deposit and monitor portfolios with real-time market-focused features.
 
 </div>
 
@@ -24,7 +24,6 @@ The platform helps users:
 - 📈 Track stock market performance
 - 💰 Buy and sell stocks
 - 📊 Monitor portfolios and holdings
-- ⭐ Create personal watchlists
 - 📉 Analyze investments
 - 🔐 Securely manage trading accounts
 
@@ -37,7 +36,6 @@ This project focuses on delivering a real-world finance dashboard experience wit
 ## 🔐 Authentication & Security
 - User Signup/Login
 - JWT Authentication
-- Password Encryption using bcrypt.js
 - Protected Routes
 
 ---
@@ -48,13 +46,6 @@ This project focuses on delivering a real-world finance dashboard experience wit
 - Holdings Management
 - Portfolio Tracking
 - Investment Monitoring
-
----
-
-## ⭐ Watchlist System
-- Add Stocks to Watchlist
-- Remove Stocks
-- Personalized Tracking Experience
 
 ---
 
@@ -161,7 +152,7 @@ http://localhost:3000
 
 ---
 
-# 🔥 Backend Setup
+# 💻Backend Setup
 
 ## Move to Backend Folder
 
@@ -190,10 +181,37 @@ npm start
 Backend will run on:
 
 ```bash
-http://localhost:3001
+http://localhost:3002
 ```
 
 ---
+# 💻 Dashboards 
+
+## Move to Dashboard Folder
+
+```bash
+cd dashboard
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Run Dashboard Server
+
+```bash
+npm run dev
+```
+
+OR
+
+```bash
+npm start
+```
+
+
 
 # 🔐 Environment Variables
 
@@ -202,7 +220,7 @@ Create a `.env` file inside backend folder:
 ```env
 MONGO_URL=your_mongodb_connection
 JWT_SECRET=your_secret_key
-PORT=5000
+PORT=3000
 ```
 
 ---
