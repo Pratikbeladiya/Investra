@@ -17,6 +17,15 @@ import NotFound from './pages/NotFound/NotFound';
 import DashboardHome from './pages/Dashboard/Home';
 
 const App = () => {
+  React.useEffect(() => {
+    const isDark = localStorage.getItem("investra_dark_mode") === "true";
+    if (isDark) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }, []);
+
   return (
     <Routes>
       {/* Landing Page Routes */}

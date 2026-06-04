@@ -2,12 +2,13 @@ import React from 'react';
 
 function HeroAbout() {
   return (
-    <div style={{ background: '#fff', paddingTop: '70px' }}>
+    <div style={{ background: 'var(--bg-primary)', paddingTop: '70px', transition: 'background-color 0.3s' }}>
 
       {/* ── Hero Section ── */}
       <div style={{
-        background: 'linear-gradient(135deg, #f5f6ff 0%, #eef0ff 100%)',
+        background: 'linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%)',
         padding: '70px 20px',
+        transition: 'background-color 0.3s',
       }}>
         {/* Centered inner container */}
         <div style={{
@@ -36,7 +37,7 @@ function HeroAbout() {
             <h1 style={{
               fontSize: '2.6rem',
               fontWeight: '800',
-              color: '#111827',
+              color: 'var(--text-primary)',
               lineHeight: '1.2',
               margin: '0 0 8px',
             }}>
@@ -54,7 +55,7 @@ function HeroAbout() {
 
             <p style={{
               fontSize: '1rem',
-              color: '#555',
+              color: 'var(--text-secondary)',
               lineHeight: '1.8',
               margin: 0,
             }}>
@@ -67,7 +68,7 @@ function HeroAbout() {
           <div style={{
             flex: '1 1 260px',
             maxWidth: '340px',
-            background: '#fff',
+            background: 'var(--bg-primary)',
             borderRadius: '20px',
             height: '240px',
             display: 'flex',
@@ -76,6 +77,8 @@ function HeroAbout() {
             boxShadow: '0 12px 40px rgba(99,102,241,0.15)',
             padding: '20px',
             overflow: 'hidden',
+            border: '1px solid var(--border-color)',
+            transition: 'background-color 0.3s, border-color 0.3s',
           }}>
             <svg width="100%" height="100%" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 100 L40 85 L70 90 L100 60 L130 70 L160 40 L190 50" stroke="#4f46e5" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
@@ -119,17 +122,17 @@ function HeroAbout() {
           <h2 style={{
             fontSize: '1.85rem',
             fontWeight: '800',
-            color: '#111827',
+            color: 'var(--text-primary)',
             marginBottom: '22px',
             lineHeight: '1.3',
           }}>
             The journey that drives us forward
           </h2>
-          <p style={{ color: '#555', lineHeight: '1.8', marginBottom: '16px', fontSize: '0.95rem' }}>
+          <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', marginBottom: '16px', fontSize: '0.95rem' }}>
             We began with a group of passionate finance and technology enthusiasts
             who believe that everyone deserves the right tools to grow their wealth.
           </p>
-          <p style={{ color: '#555', lineHeight: '1.8', fontSize: '0.95rem' }}>
+          <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', fontSize: '0.95rem' }}>
             From day one, our focus has been on creating a platform that's
             secure, innovative, and truly user-first. Today, we are India's
             largest discount broker by active clients.
@@ -172,7 +175,7 @@ function HeroAbout() {
                   <div style={{
                     width: '2px',
                     flex: 1,
-                    background: '#c7d2fe',
+                    background: 'var(--border-color)',
                     margin: '5px 0',
                     minHeight: '28px',
                   }} />
@@ -191,10 +194,10 @@ function HeroAbout() {
                 }}>
                   {item.year}
                 </p>
-                <h4 style={{ color: '#111827', fontWeight: '700', fontSize: '0.97rem', marginBottom: '5px' }}>
+                <h4 style={{ color: 'var(--text-primary)', fontWeight: '700', fontSize: '0.97rem', marginBottom: '5px' }}>
                   {item.title}
                 </h4>
-                <p style={{ color: '#666', fontSize: '0.86rem', lineHeight: '1.6', margin: 0 }}>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.86rem', lineHeight: '1.6', margin: 0 }}>
                   {item.desc}
                 </p>
               </div>

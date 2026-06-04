@@ -5,32 +5,24 @@ const values = [
   {
     title: 'Trust & Security',
     desc: 'Your security and trust are our top priorities. We are SEBI regulated.',
-    bg: '#eef2ff',
-    iconBg: '#c7d2fe',
   },
   {
     title: 'Customer First',
     desc: 'We put our users first in everything we design, build, and support.',
-    bg: '#f0fdf4',
-    iconBg: '#bbf7d0',
   },
   {
     title: 'Innovation',
     desc: 'We constantly innovate to bring you the best, most modern trading tools.',
-    bg: '#fefce8',
-    iconBg: '#fde68a',
   },
   {
     title: 'Transparency',
     desc: 'Clear pricing, no hidden charges — ever. What you see is what you pay.',
-    bg: '#fff7ed',
-    iconBg: '#fed7aa',
   },
 ];
 
 function Team() {
   return (
-    <div style={{ background: '#f7f8fc' }}>
+    <div style={{ background: 'var(--bg-secondary)', transition: 'background-color 0.3s' }}>
 
       {/* ── Our Values Section ── */}
       <div style={{
@@ -54,7 +46,7 @@ function Team() {
         <h2 style={{
           fontSize: '2rem',
           fontWeight: '800',
-          color: '#111827',
+          color: 'var(--text-primary)',
           marginBottom: '48px',
         }}>
           What we stand for
@@ -71,16 +63,17 @@ function Team() {
               key={i}
               style={{
                 flex: '1 1 200px',
-                background: '#fff',
+                background: 'var(--bg-primary)',
                 borderRadius: '16px',
                 padding: '28px 24px',
                 boxShadow: '0 4px 16px rgba(0,0,0,0.06)',
-                transition: 'transform 0.2s, box-shadow 0.2s',
+                border: '1px solid var(--border-color)',
+                transition: 'transform 0.2s, box-shadow 0.2s, background-color 0.3s',
                 cursor: 'default',
               }}
               onMouseEnter={e => {
                 e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,0.12)';
+                e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,0.15)';
               }}
               onMouseLeave={e => {
                 e.currentTarget.style.transform = 'translateY(0)';
@@ -100,7 +93,7 @@ function Team() {
               <h4 style={{
                 fontSize: '1rem',
                 fontWeight: '700',
-                color: '#111827',
+                color: 'var(--text-primary)',
                 marginBottom: '10px',
               }}>
                 {v.title}
@@ -108,7 +101,7 @@ function Team() {
 
               <p style={{
                 fontSize: '0.88rem',
-                color: '#666',
+                color: 'var(--text-secondary)',
                 lineHeight: '1.65',
                 margin: 0,
               }}>

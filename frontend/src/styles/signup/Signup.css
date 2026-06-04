@@ -134,3 +134,49 @@
     gap: 40px;
   }
 }
+
+/* Dark Mode overrides for Signup */
+body.dark-mode .signup-page-wrapper {
+  background: var(--bg-primary);
+}
+
+body.dark-mode .badge-join {
+  background: rgba(0, 208, 156, 0.1);
+  color: var(--accent-color);
+}
+
+body.dark-mode .signup-title {
+  color: var(--text-primary);
+}
+
+body.dark-mode .signup-subtitle {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .feature-item {
+  color: var(--text-primary);
+}
+
+body.dark-mode .signup-form-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .signup-form-card h2 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .signup-form-card p {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .signup-btn {
+  background: var(--accent-color);
+  color: #000;
+  font-weight: 700;
+}
+
+body.dark-mode .signup-btn:hover {
+  background: #00b386;
+}

@@ -1,13 +1,15 @@
+/* ── Landing Navbar ── */
 .navbar-custom {
-  background-color: #ffffff;
-  padding: 15px 0;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  background-color: var(--bg-primary);
+  padding: 12px 0;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+  transition: background-color 0.3s;
 }
 
 .navbar-brand-text {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #0f172a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
   letter-spacing: -1px;
   font-family: 'Inter', sans-serif;
 }
@@ -18,9 +20,10 @@
 
 .nav-link-custom {
   font-weight: 500;
-  color: #475569 !important;
-  margin: 0 15px;
+  color: var(--text-secondary) !important;
+  margin: 0 10px;
   transition: color 0.2s;
+  font-size: 0.95rem;
 }
 
 .nav-link-custom:hover {
@@ -29,28 +32,30 @@
 
 .login-link {
   text-decoration: none;
-  color: #0f172a;
+  color: var(--text-primary);
   font-weight: 500;
   font-size: 0.9rem;
-  margin-right: 20px;
+  margin-right: 16px;
   font-family: 'Inter', sans-serif;
+  white-space: nowrap;
 }
 
 .get-started-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
+  padding: 10px 20px;
   border-radius: 999px;
   background-color: #2563eb;
   color: #ffffff !important;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-family: 'Inter', sans-serif;
   transition: background-color 0.2s, transform 0.1s;
   cursor: pointer;
   border: none;
+  white-space: nowrap;
 }
 
 .get-started-btn:hover {
@@ -59,4 +64,138 @@
 
 .get-started-btn:active {
   transform: scale(0.98);
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle-dots {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.dark-mode-toggle-dots:hover {
+  background-color: var(--hover-bg, #f1f5f9);
+  color: #2563eb;
+}
+
+/* Navbar toggler dark mode */
+body.dark-mode .navbar-toggler {
+  border-color: rgba(255,255,255,0.2);
+}
+body.dark-mode .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* ── Dark Mode Overrides ── */
+body.dark-mode .navbar-custom {
+  background-color: var(--bg-primary) !important;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 15px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .navbar-brand-text {
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode .nav-link-custom {
+  color: var(--text-secondary) !important;
+}
+
+body.dark-mode .nav-link-custom:hover {
+  color: var(--accent-color, #00d09c) !important;
+}
+
+body.dark-mode .login-link {
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode .dark-mode-toggle-dots {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .dark-mode-toggle-dots:hover {
+  background-color: var(--hover-bg);
+  color: var(--accent-color, #00d09c);
+}
+
+/* Mobile expanded menu dark mode */
+body.dark-mode .navbar-collapse {
+  background: var(--bg-secondary, #121212);
+  border-radius: 12px;
+  padding: 8px 4px;
+  margin-top: 6px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+  .navbar-custom {
+    padding: 10px 0;
+  }
+
+  .nav-link-custom {
+    margin: 3px 0;
+    padding: 8px 14px !important;
+    border-radius: 8px;
+  }
+
+  .nav-link-custom:hover {
+    background: rgba(37,99,235,0.06);
+  }
+
+  body.dark-mode .nav-link-custom:hover {
+    background: var(--hover-bg);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand-text {
+    font-size: 1.35rem;
+  }
+
+  .login-link {
+    margin-right: 12px;
+    font-size: 0.87rem;
+  }
+
+  .get-started-btn {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand-text {
+    font-size: 1.2rem;
+  }
+
+  .login-link {
+    margin-right: 8px;
+    font-size: 0.82rem;
+  }
+
+  .get-started-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .dark-mode-toggle-dots {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar-brand-text {
+    font-size: 1.1rem;
+  }
+  .login-link {
+    display: none;
+  }
 }

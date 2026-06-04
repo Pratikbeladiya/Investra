@@ -17,6 +17,8 @@
   --accent-color: #00d09c;
   --card-bg: #ffffff;
   --hover-bg: #f3f4f6;
+  --color-primary-text: #1a237e;
+  --color-success-text: #2e7d32;
 }
 
 body.dark-mode {
@@ -29,6 +31,8 @@ body.dark-mode {
   --accent-color: #00d09c;
   --card-bg: #121212;
   --hover-bg: #1e1e1e;
+  --color-primary-text: var(--accent-color);
+  --color-success-text: var(--accent-color);
 }
 
 body {
@@ -41,6 +45,67 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   transition: background-color 0.3s, color 0.3s;
+}
+
+/* Global Dark Mode Page Elements & Component Overrides */
+body.dark-mode div[style*="background: '#fff'"],
+body.dark-mode div[style*="background: '#ffffff'"],
+body.dark-mode div[style*="backgroundColor: '#fff'"],
+body.dark-mode div[style*="backgroundColor: '#ffffff'"],
+body.dark-mode div[style*="background: '#f7f8fc'"] {
+  background-color: var(--bg-primary) !important;
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode div[style*="background: '#fff'"] div,
+body.dark-mode div[style*="background: '#ffffff'"] div {
+  color: var(--text-primary) !important;
+}
+
+/* About Hero and story text adjustments */
+body.dark-mode div[style*="background: 'linear-gradient'"] {
+  background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%) !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: var(--text-primary) !important;
+}
+
+body.dark-mode p,
+body.dark-mode span:not([style*="color"]) {
+  color: var(--text-secondary) !important;
+}
+
+/* Team Value Cards and Pricing Cards */
+body.dark-mode div[style*="boxShadow"] {
+  background-color: var(--bg-secondary) !important;
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4) !important;
+}
+
+body.dark-mode div[style*="boxShadow"]:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.6) !important;
+}
+
+/* Timeline & bullet connectors */
+body.dark-mode div[style*="background: '#c7d2fe'"] {
+  background: var(--border-color) !important;
+}
+
+/* Direct pricing DP / Brokerage lists tables */
+body.dark-mode table,
+body.dark-mode tr,
+body.dark-mode td,
+body.dark-mode th {
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
 }
 
 code {

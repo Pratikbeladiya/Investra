@@ -119,3 +119,55 @@
 .signup-link:hover {
   text-decoration: underline;
 }
+
+/* Dark Mode overrides for Login */
+body.dark-mode .login-page-wrapper {
+  background: var(--bg-primary);
+}
+
+body.dark-mode .login-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .login-header h1 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .login-header p {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .form-label {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .form-input {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+body.dark-mode .form-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(0, 208, 156, 0.1);
+}
+
+body.dark-mode .login-footer {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .signup-link {
+  color: var(--accent-color);
+}
+
+body.dark-mode .submit-btn {
+  background: var(--accent-color);
+  color: #000;
+  font-weight: 700;
+}
+
+body.dark-mode .submit-btn:hover {
+  background: #00b386;
+}
