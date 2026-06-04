@@ -225,7 +225,7 @@ PORT=3000
 
 ---
 
-# 📸 Application Screenshots
+# Web Application Screenshots
 
 ## 🏠 Homepage
 
@@ -235,34 +235,25 @@ PORT=3000
 
 ---
 
-## 📈 Stock Market Interface
+## 📈 Dashboard
 
-```md
-![Market](./screenshots/market.png)
-```
+![Dahboard](understanding_investra/Dashboard.png)
 
----
-
-## 💼 Portfolio Management
-
-```md
-![Portfolio](./screenshots/portfolio.png)
-```
 
 ---
 
-## ⭐ Watchlist Page
+## 💼 Profile
 
-```md
-![Watchlist](./screenshots/watchlist.png)
-```
+
+![Profile](understanding_investra/profile.png)
+
 
 ---
 
-## 🔐 Authentication Page
+## Transaction Window
 
-```md
-![Login](./screenshots/login.png)
+
+![Buy||Sell](understanding_investra/Transactionwindow.png)
 ```
 
 ---
@@ -270,9 +261,9 @@ PORT=3000
 # 🌐 Live Demo
 
 ## Live Deploy Website
-```md
+
 https://investra-frontend.vercel.app/
-```
+
 
 ---
 
