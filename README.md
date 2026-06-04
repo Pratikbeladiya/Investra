@@ -227,10 +227,10 @@ PORT=3000
 
 # 📸 Application Screenshots
 
-## 🏠 Dashboard
+## 🏠 Homepage
 
 
-![Dashboard](./Screenshots/dashboard.png)
+![Homepage](understanding_investra/Homepage.png)
 
 
 ---
