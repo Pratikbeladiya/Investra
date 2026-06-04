@@ -254,7 +254,6 @@ PORT=3000
 
 
 ![Buy||Sell](understanding_investra/Transactionwindow.png)
-```
 
 ---
 
