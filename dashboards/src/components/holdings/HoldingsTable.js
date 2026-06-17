@@ -1,4 +1,3 @@
-import React from 'react';
 
 const HoldingsTable = ({ holdings }) => {
   if (!holdings.length) {

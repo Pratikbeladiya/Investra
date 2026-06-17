@@ -1,4 +1,5 @@
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
+
 import { Line, Pie } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -27,7 +28,6 @@ const AnalyticsPanel = ({ holdings, totalValue }) => {
   const chartData = useMemo(() => {
     const totalHoldings = holdings.reduce((sum, item) => sum + item.latestPrice * item.qty, 0);
     const invested = holdings.reduce((sum, item) => sum + item.avgPrice * item.qty, 0);
-    const profit = totalHoldings - invested;
 
     return [
       { name: 'Invested', value: invested },

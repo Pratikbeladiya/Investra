@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+
 import SearchIcon from '@mui/icons-material/Search';
 import MarketCard from '../../components/common/MarketCard';
-import { MUTUAL_FUNDS } from '../../constants/marketData';
+import { MUTUAL_FUNDS } from '../../data/marketData';
 
 const MutualFundsExplore = () => {
   const [searchTerm, setSearchTerm] = useState('');

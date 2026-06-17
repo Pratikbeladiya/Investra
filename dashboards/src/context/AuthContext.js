@@ -1,5 +1,7 @@
-import React, { createContext, useEffect, useMemo, useState } from 'react';
+import { createContext, useEffect, useMemo, useState } from 'react';
+
 import api from '../services/api';
+import { getToken, getUser, saveAuth, clearAuth } from '../services/authStorage';
 
 const AuthContext = createContext({
   user: null,
@@ -10,10 +12,6 @@ const AuthContext = createContext({
   signup: async () => {},
   logout: () => {},
 });
-
-const STORAGE_TOKEN = 'trade_token';
-const STORAGE_USER = 'trade_user';
-
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(null);
@@ -38,12 +36,11 @@ export const AuthProvider = ({ children }) => {
         console.error('Failed to restore auth from URL params:', err);
       }
     } else {
-      const savedToken = localStorage.getItem(STORAGE_TOKEN);
-      const savedUser = localStorage.getItem(STORAGE_USER);
+      const savedToken = getToken();
+      const savedUser = getUser();
       if (savedToken && savedUser) {
-        const parsedUser = JSON.parse(savedUser);
         setToken(savedToken);
-        setUser(parsedUser);
+        setUser(savedUser);
         api.setToken(savedToken);
       }
     }
@@ -54,8 +51,7 @@ export const AuthProvider = ({ children }) => {
     setToken(tokenValue);
     setUser(userData);
     api.setToken(tokenValue);
-    localStorage.setItem(STORAGE_TOKEN, tokenValue);
-    localStorage.setItem(STORAGE_USER, JSON.stringify(userData));
+    saveAuth({ token: tokenValue, user: userData });
   };
 
   const login = async (email, password) => {
@@ -86,8 +82,7 @@ export const AuthProvider = ({ children }) => {
     setToken(null);
     setUser(null);
     api.setToken(null);
-    localStorage.removeItem(STORAGE_TOKEN);
-    localStorage.removeItem(STORAGE_USER);
+    clearAuth();
   };
 
   const value = useMemo(

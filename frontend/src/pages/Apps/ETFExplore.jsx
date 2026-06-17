@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import MarketCard from '../../components/common/MarketCard';
-import { ETFS } from '../../constants/marketData';
+import { ETFS } from '../../data/marketData';
 
 const ETFExplore = () => {
   const [searchTerm, setSearchTerm] = useState('');

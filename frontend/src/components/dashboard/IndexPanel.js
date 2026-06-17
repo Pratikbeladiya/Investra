@@ -1,4 +1,3 @@
-import React from 'react';
 
 const IndexPanel = ({ indexData }) => {
   const positive = indexData.change >= 0;

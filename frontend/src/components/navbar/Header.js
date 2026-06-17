@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Header = ({ user, profile, onLogout }) => {
   const [open, setOpen] = useState(false);

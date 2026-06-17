@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import SecurityIcon from '@mui/icons-material/Security';
 import MarketCard from '../../components/common/MarketCard';
-import { BONDS } from '../../constants/marketData';
+import { BONDS } from '../../data/marketData';
 
 const BondExplore = () => {
   const [searchTerm, setSearchTerm] = useState('');

@@ -1,4 +1,3 @@
-import React from 'react';
 
 const OrdersTable = ({ orders }) => {
   if (!orders.length) {

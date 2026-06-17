@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+
 import api from '../../../services/api';
 
 const TradeModal = ({ stock, mode, onClose, onSuccess }) => {

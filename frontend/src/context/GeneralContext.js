@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import BuyActionWindow from "../components/common/Modal/BuyActionWindow";
 
 const GeneralContext = React.createContext({
-  openBuyWindow: (uid, mode) => {},
+  openBuyWindow: () => {},
   closeBuyWindow: () => {},
 });
 

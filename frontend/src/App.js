@@ -8,7 +8,6 @@ import HomePage from './pages/Home/HomePage';
 import AboutPage from './pages/About/AboutPage';
 import PricingPage from './pages/Pricing/PricingPage';
 import SupportPage from './pages/Support/SupportPage';
-import ProductPage from './pages/Products/ProductPage';
 import LoginPage from './pages/Login/Login';
 import SignupPage from './pages/Signup/Signup';
 import NotFound from './pages/NotFound/NotFound';
@@ -29,12 +28,28 @@ const App = () => {
   return (
     <Routes>
       {/* Landing Page Routes */}
-      <Route path="/" element={<><Navbar /><HomePage /><Footer /></>} />
-      <Route path="/about" element={<><Navbar /><AboutPage /><Footer /></>} />
-      <Route path="/pricing" element={<><Navbar /><PricingPage /><Footer /></>} />
-      <Route path="/support" element={<><Navbar /><SupportPage /><Footer /></>} />
-      <Route path="/products" element={<><Navbar /><ProductPage /><Footer /></>} />
-      
+      <Route path="/" element={
+        <><Navbar />
+        <HomePage />
+        <Footer /></>} />
+
+      <Route path="/about" element={<>
+      <Navbar />
+      <AboutPage />
+      <Footer /></>} />
+
+      <Route path="/pricing" element={<>
+      <Navbar />
+      <PricingPage />
+      <Footer /></>} />
+
+      <Route path="/support" element={<>
+      <Navbar />
+      <SupportPage />
+      <Footer /></>} />
+
+     
+
       {/* Auth Routes */}
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />

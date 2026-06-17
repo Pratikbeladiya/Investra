@@ -34,7 +34,19 @@ export const MUTUAL_FUNDS = [
     risk: "Moderate",
     minInvestment: 1000,
     description: "Dynamic allocation between equity and debt for balanced growth"
-  }
+  },
+  {
+    id: 1,
+    name: "Quantum Long Term Equity Fund",
+    category: "EQUITY",
+    subCategory: "Mid Cap",
+    nav: 120.67,
+    returns: { '1Y': 23.45, '3Y': 20.23 },
+    rating: 4.5,
+    risk: "Moderate-High",
+    minInvestment: 1000,
+    description: "Focuses on long-term capital appreciation through equity investments"
+  },
 ];
 
 export const ETFS = [

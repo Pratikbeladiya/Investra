@@ -1,10 +1,7 @@
 import axios from 'axios';
+import { getToken, clearAuth } from './authStorage';
 
 const BASE_URL = process.env.REACT_APP_API_BASE || 'http://localhost:3002/api';
-const STORAGE_TOKEN = 'trade_token';
-const STORAGE_USER = 'trade_user';
-const LEGACY_STORAGE_TOKEN = 'zerodha_token';
-const LEGACY_STORAGE_USER = 'zerodha_user';
 
 const apiClient = axios.create({
   baseURL: BASE_URL,
@@ -21,9 +18,7 @@ const setToken = (token) => {
 
 apiClient.setToken = setToken;
 
-const getStoredToken = () => localStorage.getItem(STORAGE_TOKEN) || localStorage.getItem(LEGACY_STORAGE_TOKEN);
-
-const initialToken = getStoredToken();
+const initialToken = getToken();
 if (initialToken && initialToken !== 'null') {
   setToken(initialToken);
 }
@@ -33,10 +28,7 @@ apiClient.interceptors.response.use(
   (error) => {
     if (error.response && error.response.status === 401) {
       console.warn('Auth error:', error.response.data?.message || 'Unauthorized');
-      localStorage.removeItem(STORAGE_TOKEN);
-      localStorage.removeItem(STORAGE_USER);
-      localStorage.removeItem(LEGACY_STORAGE_TOKEN);
-      localStorage.removeItem(LEGACY_STORAGE_USER);
+      clearAuth();
       window.location.href = '/login';
     }
     return Promise.reject(error);

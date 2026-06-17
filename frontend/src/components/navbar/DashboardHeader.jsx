@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import apiClient from "../../services/api";
+import { clearAuth } from '../../services/authStorage';
 import {
   Menu as MuiMenu,
   MenuItem,
@@ -109,10 +110,7 @@ const DashboardHeader = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("trade_token");
-    localStorage.removeItem("trade_user");
-    localStorage.removeItem("zerodha_token");
-    localStorage.removeItem("zerodha_user");
+    clearAuth();
     window.location.href = '/login';
   };
 
