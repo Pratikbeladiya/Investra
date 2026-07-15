@@ -141,24 +141,29 @@ function HeroAbout() {
 
         {/* Timeline Right */}
         <div style={{ flex: '1 1 280px' }}>
-          {[
-            {
-              year: '2010',
-              title: 'The Beginning',
-              desc: 'Launched with a vision to simplify investing for every Indian.',
-            },
-            {
-              year: '2015',
-              title: 'Growing Together',
-              desc: 'Crossed 10 lakh investors and launched advanced trading tools.',
-            },
-            {
-              year: '2024 & Beyond',
-              title: 'Building the Future',
-              desc: 'Continuing to innovate and empower investors across India.',
-              isLast: true,
-            },
-          ].map((item, i) => (
+          { [
+  {
+    phase: "Phase 01",
+    title: "Understanding the Industry",
+    desc: "Explored leading platforms in the industry to understand their workflow, user experience, and key features. Analyzed how real-world applications solve user problems and gathered inspiration before starting development."
+  },
+  {
+    phase: "Phase 02",
+    title: "Design & Architecture",
+    desc: "Planned the complete application structure, designed reusable React components, created API flow, database schema, and organized the project using a scalable MERN architecture."
+  },
+  {
+    phase: "Phase 03",
+    title: "Building with MERN Stack",
+    desc: "Developed the frontend using React.js, implemented the backend with Node.js and Express.js, integrated MongoDB for database management, created REST APIs, and connected the complete application from frontend to backend."
+  },
+  {
+    phase: "Phase 04",
+    title: "Continuous Improvement",
+    desc: "Tested the application, fixed bugs, optimized performance, improved the user interface, and continue adding new features while learning modern development practices.",
+    isLast: true
+  }
+].map((item, i) => (
             <div key={i} style={{ display: 'flex', gap: '16px', marginBottom: item.isLast ? 0 : '28px' }}>
               {/* Bullet point + connector line */}
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -192,7 +197,7 @@ function HeroAbout() {
                   textTransform: 'uppercase',
                   marginBottom: '4px',
                 }}>
-                  {item.year}
+                  {item.phase}
                 </p>
                 <h4 style={{ color: 'var(--text-primary)', fontWeight: '700', fontSize: '0.97rem', marginBottom: '5px' }}>
                   {item.title}
