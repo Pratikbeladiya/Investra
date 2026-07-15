@@ -13,11 +13,7 @@ const values = [
   {
     title: 'Innovation',
     desc: 'We constantly innovate to bring you the best, most modern trading tools.',
-  },
-  {
-    title: 'Transparency',
-    desc: 'Clear pricing, no hidden charges — ever. What you see is what you pay.',
-  },
+  }
 ];
 
 function Team() {
