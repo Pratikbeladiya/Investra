@@ -18,7 +18,7 @@ function OpenAccount() {
             </p>
           </div>
           <div style={{ flex: '1 1 280px', minWidth: '260px' }}>
-            <Link to="/signup" style={{ display: 'inline-flex', width: '100%', alignItems: 'center', justifyContent: 'center', padding: '12px 18px', borderRadius: '999px', backgroundColor: '#2563eb', color: '#ffffff', textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem' }}>
+            <Link to="/signup" style={{ display: 'inline-flex', width: '40%', alignItems: 'center', justifyContent: 'center', padding: '12px 18px', borderRadius: '999px', backgroundColor: '#2563eb', color: '#ffffff', textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem' }}>
               Start your account
             </Link>
           </div>

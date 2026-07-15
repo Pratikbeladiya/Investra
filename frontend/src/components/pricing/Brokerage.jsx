@@ -116,8 +116,8 @@ function Brokerage() {
         flexWrap: 'wrap', gap: '24px',
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(255,255,255,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem' }}>📈</div>
-          <div>
+          <div> 
+            
             <p style={{ color: '#fff', fontWeight: '700', fontSize: '1.1rem', margin: '0 0 4px' }}>Ready to start your investment journey?</p>
             <p style={{ color: '#c5cae9', fontSize: '0.88rem', margin: 0 }}>Zero brokerage on equity delivery. Open your account in minutes.</p>
           </div>

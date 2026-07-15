@@ -65,7 +65,6 @@ function RaiseTicket() {
       {/* Bottom CTA */}
       <div style={{ background: 'linear-gradient(135deg, #1a237e 0%, #3949ab 100%)', padding: '40px 60px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '24px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(255,255,255,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem' }}>🎧</div>
           <div>
             <p style={{ color: '#fff', fontWeight: '700', fontSize: '1.1rem', margin: '0 0 4px' }}>Didn't find what you were looking for?</p>
             <p style={{ color: '#c5cae9', fontSize: '0.88rem', margin: 0 }}>Open a free account and get dedicated support.</p>
