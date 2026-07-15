@@ -30,9 +30,11 @@ export const clearAuth = () => {
   [...TOKEN_KEYS, ...USER_KEYS].forEach(k => localStorage.removeItem(k));
 };
 
-export default {
+const authStorageService = {
   getToken,
   getUser,
   saveAuth,
   clearAuth,
 };
+
+export default authStorageService;
