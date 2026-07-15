@@ -46,12 +46,12 @@ function RaiseTicket() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {topic.links.map((link, j) => (
                   <button key={j} type="button" style={{
-                    color: 'var(--color-primary-text)', fontSize: '0.88rem', lineHeight: '1.5',
+                    color: 'var(--text-primary)', fontSize: '0.88rem', lineHeight: '1.5',
                     transition: 'color 0.15s', background: 'transparent',
                     border: 'none', padding: 0, textAlign: 'left', cursor: 'pointer',
                   }}
                   onMouseEnter={e => e.currentTarget.style.color = 'var(--accent-color)'}
-                  onMouseLeave={e => e.currentTarget.style.color = 'var(--color-primary-text)'}
+                  onMouseLeave={e => e.currentTarget.style.color = 'var(--text-primary)'}
                   >
                     → {link}
                   </button>
